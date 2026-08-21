@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body class="admin-page">
+    <main class="admin-card">
+      <p class="eyebrow">Private studio</p>
+      <h1>Control center</h1>
+      <p class="intro">This starter dashboard is ready for the Firestore profile, projects, assets, navigation, and conversation collections.</p>
+      <div class="admin-actions">
+        <button class="button primary" type="button">Edit profile</button>
+        <button class="button ghost" type="button">Add project</button>
+        <button class="button ghost" type="button">View messages</button>
+      </div>
+      <a class="logout" href="{{ url_for('admin_logout') }}">Log out</a>
+    </main>
+  </body>
+</html>
