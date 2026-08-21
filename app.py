@@ -21,7 +21,7 @@ def admin_required(view):
 
 @app.get("/")
 def home():
-    return render_template("index.html", profile={"name": "Aarav Mehta"})
+    return render_template("index.html", profile={"name": "MD MAJID ANSARI"})
 
 
 @app.route("/admin/login", methods=["GET", "POST"])
